@@ -18,9 +18,9 @@ class chatbot:
         elif user_input=="2":
             self.signin()
         elif user_input=="3":
-            pass
+            self.mypost()
         elif user_input=="4":
-            pass
+            self.sendposttofriend()
         else:
             exit()
 
@@ -42,8 +42,36 @@ class chatbot:
             if self.username==uname and self.password==pwd:
                 print("you have successfully signed in") 
                 self.loggedin=True
+                self.menu()
             else:
                 print("pls input correct username and password")
 
+    def mypost(self):
+        if self.loggedin:
+            post=input("write your post here")
+            print("your post has been published")
+            self.menu()
+        else:
+            print("pls signin to write a post")
+            self.menu()
+        
+    def sendposttofriend(self):
+        if self.loggedin:
+            friend=input("enter your friend's name")
+            post=input("write your post here")
+            print(f"your post has been sent to {friend}")
+            self.menu()
+        else:
+            print("pls signin to write a post")
+            self.menu()
 
-obj = chatbot()
+
+
+
+
+
+
+
+
+
+# obj = chatbot()
