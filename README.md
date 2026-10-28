@@ -8,7 +8,7 @@ Learning notes in code while studying classes, objects and inheritance.
 ## What it does
 - `opps1.py`: a basic `employee` class with attributes and methods
 - `inherit.py`: inheritance with an `animal` base class and a `dog` subclass
-- `oop_proj.py`: a small menu-driven `chatbot` class built with OOP
+- `oop_proj.py`: a menu-driven console app in one class (sign up, sign in, write and send posts)
 - `rough.py`: scratch work
 
 ## Project structure
